@@ -1,0 +1,121 @@
+/* Global settings */
+html {
+  scroll-behavior: smooth; /* 平滑滾動 */
+}
+body {
+  margin: 0;
+  font-family: 'Noto Sans TC', sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+/* Header - sticky navbar */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #1f1f1f;
+  padding: 10px 20px;
+  text-align: center;
+  border-bottom: 2px solid #333;
+}
+header h1 {
+  margin: 0;
+  font-size: 1.8em;
+  color: #ffffff;
+}
+nav {
+  margin-top: 8px;
+}
+nav a {
+  margin: 0 15px;
+  color: #90caf9;
+  text-decoration: none;
+  font-weight: 500;
+}
+nav a.active {
+  color: #ffcc80; /* 高亮顏色 */
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+section {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+h2 {
+  color: #ffcc80;
+  border-bottom: 2px solid #ffcc80;
+  padding-bottom: 5px;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+ul li {
+  margin: 8px 0;
+}
+
+/* About Section */
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 20px;
+  border: 3px solid #90caf9;
+}
+
+/* Project Section */
+.project {
+  background: #1e1e1e;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+}
+.project h3 a {
+  color: #90caf9;
+  text-decoration: none;
+}
+.project h3 a:hover {
+  text-decoration: underline;
+}
+
+/* Social Icons */
+.social-icons a {
+  margin: 0 10px;
+  color: #90caf9;
+  font-size: 1.5em;
+  transition: color 0.3s;
+}
+.social-icons a:hover {
+  color: #ffcc80;
+}
+
+/* Back to top button */
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #90caf9;
+  color: #121212;
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+  font-size: 18px;
+  cursor: pointer;
+  display: none; /* 預設隱藏 */
+  z-index: 1000;
+}
+#backToTop:hover {
+  background: #ffcc80;
+}
