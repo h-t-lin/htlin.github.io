@@ -137,3 +137,19 @@ footer {
   color: var(--accent);
   margin-top: 50px;
 }
+
+/* Language */
+#langToggle {
+  background: var(--accent);
+  border: none;
+  color: #121212;
+  font-size: 0.9em;
+  margin-left: 15px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#langToggle:hover {
+  background: var(--accent-dark);
+  color: #fff;
+}
